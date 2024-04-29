@@ -1,0 +1,23 @@
+=====播放器不要轻易分享给他人，避免接口被盗用=========
+=====播放器不要轻易分享给他人，避免接口被盗用=========
+=====播放器不要轻易分享给他人，避免接口被盗用=========
+
+1.将播放器源码上传至服务器
+2.你的域名+/dmku/ 进行安装    
+3.修改播放器后台密码  /config.php 以及json接口配置
+4.后台账号admin ，密码123456
+
+
+此为苹果CMS 下一集js代码，其他cms可自行研究参考
+
+播放器跨域远程下一集代码：
+
+MacPlayer.Html = '<iframe border="0"mozallowfullscreen="mozallowfullscreen"msallowfullscreen="msallowfullscreen"oallowfullscreen="oallowfullscreen"webkitallowfullscreen="webkitallowfullscreen"  src="https://bilibili.ipian.net/?url='+MacPlayer.PlayUrl+'&next=//'+maccms.url+''+parent.MacPlayer.PlayLinkNext+'" height="'+MacPlayer.Height+'" width="100%" height="100%" marginWidth="0" frameSpacing="0" marginHeight="0" frameBorder="0" scrolling="no" vspale="0" noResize></iframe>';
+MacPlayer.Show();
+
+播放器本地下一集代码：
+
+MacPlayer.Html = '<iframe border="0"mozallowfullscreen="mozallowfullscreen"msallowfullscreen="msallowfullscreen"oallowfullscreen="oallowfullscreen"webkitallowfullscreen="webkitallowfullscreen"  src="'+maccms.path+'/static/759647/dm759647s.php?url='+MacPlayer.PlayUrl+'&next='+maccms.path+''+parent.MacPlayer.PlayLinkNext+'" height="'+MacPlayer.Height+'" width="100%" height="100%" marginWidth="0" frameSpacing="0" marginHeight="0" frameBorder="0" scrolling="no" vspale="0" noResize></iframe>';
+MacPlayer.Show();
+
+
